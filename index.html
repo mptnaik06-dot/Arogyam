@@ -81,9 +81,21 @@
 
     /* Responsive for mobile */
     @media (max-width: 480px) {
-      .coming-soon {
-        font-size: 1.5.0rem;
-        letter-spacing: 0.1em;
+  .coming-soon {
+    font-size: 2rem;          /* readable but safe */
+    letter-spacing: 0.05em;   /* much tighter */
+    line-height: 1.2;         /* allows clean wrap */
+    max-width: 90vw;          /* prevents overflow */
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  .social-icons a img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
       }
       .social-icons a img {
         width: 26px;
@@ -117,6 +129,7 @@
   </div>
 </body>
 </html>
+
 
 
 
