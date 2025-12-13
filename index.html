@@ -98,18 +98,18 @@
 
       .footer {
   position: fixed;
-  bottom: 12px;
+  bottom: 12px;               /* real bottom spacing */
   left: 0;
   width: 100%;
   text-align: center;
   font-size: 0.75rem;
-  color: #ffffff; /* pure white */
+  color: #ffffff;
   letter-spacing: 0.05em;
-  padding: 10px 0;
-  background: transparent;
-  z-index: 2;
+  padding: 0;                 /* remove padding to avoid bar effect */
+  background: none;           /* force transparent */
+  z-index: 5;
+  pointer-events: none;       /* prevents accidental hover issues */
 }
-
 
 /* Mobile adjustment */
 @media (max-width: 480px) {
@@ -160,6 +160,7 @@
     
 </body>
 </html>
+
 
 
 
