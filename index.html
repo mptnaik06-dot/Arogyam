@@ -97,15 +97,19 @@
   }
 
       .footer {
-  position: absolute;
-  bottom: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   text-align: center;
   font-size: 0.75rem;
-color: #ffffff;
-        letter-spacing: 0.05em;
-  z-index: 1;
+  color: #ffffff; /* pure white */
+  letter-spacing: 0.05em;
+  padding: 10px 0;
+  background: transparent;
+  z-index: 2;
 }
+
 
 /* Mobile adjustment */
 @media (max-width: 480px) {
@@ -155,6 +159,7 @@ color: #ffffff;
     
 </body>
 </html>
+
 
 
 
