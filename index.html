@@ -106,11 +106,14 @@
     }
 
     /* Elfsight widget container adjustment */
-    .google-reviews-widget {
-      max-width: 900px;
-      margin: 20px auto;
-      text-align: center;
-    }
+    .google-reviews-widget-container {
+  background-color: #ffffff; /* white background */
+  border-radius: 12px;       /* rounded corners */
+  padding: 20px;             /* spacing inside */
+  max-width: 900px;
+  margin: 20px auto;
+}
+
 
     footer {
       text-align: center;
@@ -167,12 +170,13 @@
 
   <section>
   <h2>Google Reviews</h2>
-  <div class="google-reviews-widget">
+  <div class="google-reviews-widget-container">
     <!-- Elfsight Google Reviews Widget -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
     <div class="elfsight-app-59733f95-2d4c-497c-a92d-dc994d3ed95b" data-elfsight-app-lazy></div>
   </div>
 </section>
+
 
 <section>
   <h2>Contact</h2>
@@ -200,5 +204,6 @@
 
 </body>
 </html>
+
 
 
