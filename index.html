@@ -3,173 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AROGYAM</title>
+  <title>Arogyam Advanced Physiotherapy | Belagavi</title>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="arogyam-favicon.png">
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: 'Montserrat', Arial, sans-serif;
-      background: #0b0f0e; /* Deep clean wellness black */
-      position: relative;
-      overflow: hidden;
+      background: #0b0f0e;
+      color: #ffffff;
+      line-height: 1.6;
     }
 
-
-    /* Background image with 25% opacity */
     body::before {
       content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("images/Rehab.jpg") center center / cover no-repeat;
+      position: fixed;
+      inset: 0;
+      background: url("images/Rehab.jpg") center / cover no-repeat;
       opacity: 0.25;
       z-index: -1;
     }
 
-    .content-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      z-index: 1;
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
     }
 
     .logo-container img {
-      max-width: 80vw;
-      max-height: 200px;
-      display: block;
+      max-width: 260px;
+      height: auto;
     }
 
-    .coming-soon {
-      margin-top: 18px;
-      color: #ffffff;
-      font-size: 3rem;
-      letter-spacing: 0.18em;
+    .headline {
+      margin-top: 20px;
+      font-size: 2.8rem;
       font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .subline {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 26px;
+      border-radius: 6px;
+      background: #5363f2;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
       text-align: center;
+    }
+
+    h2 {
+      color: #5363f2;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
     }
 
     .social-icons {
       display: flex;
       justify-content: center;
-      gap: 28px;
-      margin-top: 28px;
+      gap: 26px;
+      margin-top: 30px;
     }
 
-    .social-icons a img {
-      width: 34px;
-      height: 34px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+    .social-icons img {
+      width: 30px;
+      height: 30px;
       opacity: 0.85;
+      transition: transform 0.3s ease;
     }
 
-    .social-icons a img:hover {
-      transform: scale(1.2);
+    .social-icons img:hover {
+      transform: scale(1.15);
       opacity: 1;
     }
 
-    /* Responsive for mobile */
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
     @media (max-width: 480px) {
-  .coming-soon {
-    font-size: 2rem;          /* readable but safe */
-    letter-spacing: 0.05em;   /* much tighter */
-    line-height: 1.2;         /* allows clean wrap */
-    max-width: 90vw;          /* prevents overflow */
-    word-wrap: break-word;
-    text-align: center;
-  }
-
-  .social-icons a img {
-    width: 26px;
-    height: 26px;
-  }
-
-      .footer {
-  position: fixed;
-  bottom: 12px;               /* real bottom spacing */
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 0.75rem;
-  color: #ffffff;
-  letter-spacing: 0.05em;
-  padding: 0;                 /* remove padding to avoid bar effect */
-  background: none;           /* force transparent */
-  z-index: 5;
-  pointer-events: none;       /* prevents accidental hover issues */
-}
-
-/* Mobile adjustment */
-@media (max-width: 480px) {
-  .footer {
-      bottom: 12px;
-    font-size: 0.65rem;
-  }
-}
-
-}
-
-      }
-      .social-icons a img {
-        width: 26px;
-        height: 26px;
+      .headline {
+        font-size: 1.9rem;
+        letter-spacing: 0.05em;
       }
     }
   </style>
 </head>
-  <body>
-  <div class="content-wrap">
-    <div class="logo-container">
-        <img src="images/Arogyam-white.png" alt="Arogyam Logo">
-    </div>
-    <div class="coming-soon">
-      ADVANCED PHYSIOTHERAPY
-    </div>
 
-    <!-- Social Media Icons with Links -->
-    <div class="social-icons">
-      <a href="https://www.instagram.com/physiotherapy_arogyam" target="_blank" aria-label="Instagram">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/Arogyam-Applying-physiotherapy-Belgaum" target="_blank" aria-label="Facebook">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook">
-      </a>
-      <a href="https://share.google/G3dT2JxEQfs1ssyl8" target="_blank" aria-label="Clinic Location">
-  <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Clinic Location">
-</a>
+<body>
 
-    </div>
-
-    <div class="footer">
-  © 2025 Arogyam Advanced Physiotherapy. All rights reserved.
-</div>
+<header>
+  <div class="logo-container">
+    <img src="images/Arogyam-white.png" alt="Arogyam Physiotherapy Logo">
   </div>
-    
+
+  <div class="headline">ADVANCED PHYSIOTHERAPY</div>
+  <div class="subline">Trusted Physiotherapy Care in Belagavi</div>
+
+  <div class="cta">
+    <a href="tel:+919743233382">Call Now</a>
+    <a href="https://share.google/G3dT2JxEQfs1ssyl8" target="_blank">Get Directions</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Arogyam</h2>
+  <p>
+    Arogyam Advanced Physiotherapy is led by <strong>Dr. Prashant P. Naik</strong>,
+    providing personalized, evidence-based physiotherapy treatments focused on
+    pain relief, recovery, and long-term mobility.
+  </p>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <ul>
+    <li>Orthopedic Physiotherapy</li>
+    <li>Sports Injury Rehabilitation</li>
+    <li>Post-Surgical Rehabilitation</li>
+    <li>Back & Neck Pain Management</li>
+    <li>Matrix Rhythm Therapy</li>
+    <li>Cupping Therapy</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Google Reviews</h2>
+  <p>⭐⭐⭐⭐⭐ Rated highly by our patients</p>
+  <a href="https://www.google.com/maps/place/YOUR_GOOGLE_BUSINESS_LINK" target="_blank" style="color:#5363f2;">
+    Read Google Reviews
+  </a>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>
+    📍 2537/B, Ground Floor, Sai Arcade,<br>
+    Mahatma Phule Road, Shahpur,<br>
+    Belagavi – 590003<br><br>
+    📞 <a href="tel:+919743233382" style="color:#fff;">+91 97432 33382</a><br>
+    ✉ <a href="mailto:drprashant@arogyamphysio.com" style="color:#fff;">drprashant@arogyamphysio.com</a>
+  </p>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/physiotherapy_arogyam" target="_blank">
+      <img src="images/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/Arogyam-Applying-physiotherapy-Belgaum" target="_blank">
+      <img src="images/facebook.png" alt="Facebook">
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Arogyam Advanced Physiotherapy. All rights reserved.
+</footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
