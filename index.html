@@ -18,12 +18,18 @@
     }
 
     /* ================= HERO ================= */
-    .hero {
-      min-height: 100vh;
-      background: url("images/Rehab.jpg") center / cover no-repeat;
-      position: relative;
-      color: #ffffff;
-    }
+   .hero {
+  min-height: 100vh;       /* fallback */
+  min-height: 100dvh;      /* exact mobile viewport height */
+  background-image: url("images/Rehab.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #ffffff;
+}
+
+
 
     .hero::before {
       content: "";
@@ -138,6 +144,13 @@
         letter-spacing: 0.05em;
       }
 
+      @media (min-width: 1024px) {
+  .hero {
+    background-position: center top;
+  }
+}
+
+
       .logo-container img {
         max-width: 200px;
       }
@@ -229,3 +242,4 @@
 
 </body>
 </html>
+
