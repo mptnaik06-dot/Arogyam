@@ -18,19 +18,25 @@
     }
 
     /* ================= HERO ================= */
-    .hero {
-      min-height: 100vh;
-      background: url("images/Rehab.jpg") center / cover no-repeat;
-      position: relative;
-      color: #ffffff;
-    }
+   .hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-image: url("images/Rehab.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; /* FORCE fill */
+  position: relative;
+  color: #ffffff;
+}
+
 
     .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.45);
-    }
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
 
     .hero-content {
       position: relative;
@@ -96,7 +102,7 @@
 
     /* ================= GOOGLE REVIEWS ================= */
     .google-reviews-widget-container {
-      background-color: #C7E8FF;
+      background-color: #ffffff;
       border-radius: 12px;
       padding: 20px;
       max-width: 900px;
@@ -232,3 +238,4 @@
 
 </body>
 </html>
+
