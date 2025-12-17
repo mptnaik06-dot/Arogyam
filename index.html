@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arogyam Advanced Physiotherapy | Belagavi</title>
 
-  <link rel="icon" type="image/png" href="arogyam-favicon.png">
+  <link rel="icon" type="image/png" href="images/arogyam-favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
   <style>
@@ -18,25 +18,27 @@
     }
 
     /* ================= HERO ================= */
-   .hero {
-  min-height: 100vh;
-  min-height: 100dvh;
-  background-image: url("images/Rehab.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%; /* FORCE fill */
-  position: relative;
-  color: #ffffff;
-}
+    .hero {
+      width: 100vw;
+      min-height: 100vh;
+      min-height: 100dvh;
 
+      background-image: url("images/Rehab.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      position: relative;
+      color: #ffffff;
+      overflow: hidden;
+    }
 
     .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
 
     .hero-content {
       position: relative;
@@ -79,10 +81,10 @@
     }
 
     /* ================= CONTENT ================= */
-    section {
+    section:not(.hero) {
       max-width: 900px;
       margin: auto;
-      padding: 15px 15px;
+      padding: 40px 20px;
       text-align: center;
       background: #ffffff;
     }
@@ -165,7 +167,7 @@
 
       <div class="cta">
         <a href="tel:+919743233382">Call Now</a>
-        <a href="https://www.google.com/maps/place/AROGYAM+ADVANCED+PHYSIOTHERAPY+JOINT+AND+SPINE+CLINIC+(Dr.+Prashant+Naik,+Jinal+Naik(PT)+%26+Dr.+Sushil+Kumar(PT))/" target="_blank">
+        <a href="https://maps.app.goo.gl/htw1myhAx8qMqEY78" target="_blank" rel="noopener">
           Get Directions
         </a>
       </div>
@@ -210,12 +212,13 @@
   <section>
     <h2>Contact</h2>
     <p>
-      📍 <a href="https://maps.app.goo.gl/htw1myhAx8qMqEY78"
-     target="_blank"
-     rel="noopener"
-     style="color:#292C6D; text-decoration:none;">2537/B, Ground Floor, Sai Arcade,<br>
-      Mahatma Phule Road, Shahpur,<br>
-      Belagavi – 590003<br><br>
+      📍 
+      <a href="https://maps.app.goo.gl/htw1myhAx8qMqEY78" target="_blank" rel="noopener" style="color:#292C6D; text-decoration:none;">
+        2537/B, Ground Floor, Sai Arcade,<br>
+        Mahatma Phule Road, Shahpur,<br>
+        Belagavi – 590003
+      </a>
+      <br><br>
 
       📞 <a href="tel:+919743233382" style="color:#292C6D;">+91 97432 33382</a><br>
       ✉ <a href="mailto:care@arogyamphysio.com" style="color:#292C6D;">care@arogyamphysio.com</a>
@@ -231,11 +234,9 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     © 2025 Arogyam Advanced Physiotherapy. All rights reserved.
   </footer>
 
 </body>
 </html>
-
